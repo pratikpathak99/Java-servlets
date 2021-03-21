@@ -2,6 +2,7 @@
     Document   : temperature.jsp
     Created on : 19 Mar, 2021, 7:25:17 PM
     Author     : Lenovo
+
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
