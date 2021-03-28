@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <%
+        <% 
             String username = request.getParameter("email");
             String password = request.getParameter("pass");
             String p = "p1234",u = "hpatel691999@gmail.com",login;
