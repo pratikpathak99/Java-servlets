@@ -15,7 +15,7 @@ color:blue;
 }
 </style>
 <body>
-  <h2> Factorial Solver in JSTL and JSP </h2>
+  <h2> Factorial in JSTL  </h2>
   <br>
   <form method="post">
       Enter a number &nbsp; &nbsp;
@@ -29,11 +29,11 @@ color:blue;
             
         <c:forEach var = "i" begin = "1" end = "${param.number}">
          
-        <c:set var="fact" scope="session" value="${i} * ${(param.number)}"/> 
+        <c:set var="fact" scope="session" value="${fact * i}"/> 
           
         </c:forEach>
-    
+        Factorial is :- ${fact}
     </c:if>
-    ${fact}
+    
 </body>
 </html>
