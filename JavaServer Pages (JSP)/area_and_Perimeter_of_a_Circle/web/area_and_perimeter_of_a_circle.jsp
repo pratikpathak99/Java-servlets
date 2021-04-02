@@ -16,7 +16,7 @@ color:blue;
 <body>
   <h2> Area of the Circle And Perimeter Solver in JSTL</h2>
   <br>
-  <form method="post">
+    <form method="post">
       Enter the Radius &nbsp; &nbsp;
       <input type="text" name="radius"  size="3" value="<c:out value="${param.radius}"/>" autofocus/><br>
       <br> <br>
