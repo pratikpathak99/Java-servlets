@@ -10,7 +10,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h2> Pattern  </h2>
+        <h2> String </h2>
         <br>
       <form method="post">
         Enter Your String &nbsp; &nbsp;
