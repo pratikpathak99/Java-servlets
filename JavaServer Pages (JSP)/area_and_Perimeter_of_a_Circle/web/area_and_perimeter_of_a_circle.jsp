@@ -1,4 +1,4 @@
- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
@@ -18,17 +18,15 @@ color:blue;
   <br>
   <form method="post">
       Enter the Radius &nbsp; &nbsp;
-    <input type="text" name="radius"  size="3" value="<c:out value="${param.radius}"/>" autofocus/><br>
+      <input type="text" name="radius"  size="3" value="<c:out value="${param.radius}"/>" autofocus/><br>
       <br> <br>
-     <input type="submit" value="Compute Area"  title="Click here to findout the area of the circle." />
-     <br />
+      <input type="submit" value="Compute Area"  title="Click here to findout the area of the circle." />
+      <br />
     </form>
-<c:if test="${pageContext.request.method=='POST'}">
- <c:set var="convert" scope="session" 
- value="${ (param.radius* param.radius) * 3.1416}"/>
- <br>
-
-The area of the circle is <fmt:formatNumber value="${convert}" maxFractionDigits="2"/>.
-</c:if>
+    <c:if test="${pageContext.request.method=='POST'}">
+        <c:set var="convert" scope="session" value="${ (param.radius* param.radius) * 3.1416}"/>
+        <br>
+        The area of the circle is <fmt:formatNumber value="${convert}" maxFractionDigits="2"/>.
+    </c:if>
 </body>
 </html>
