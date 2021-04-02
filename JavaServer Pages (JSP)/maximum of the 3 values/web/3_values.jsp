@@ -34,13 +34,22 @@ color:blue;
         <c:set var="Two" scope="session" value="${param.two}"/>
         <br>
         <c:set var="Three" scope="session" value="${param.three}"/>
-        <br>
-        One :-  <fmt:formatNumber value="${One}" maxFractionDigits="2"/>.
-        <br/>
-        Two :-  <fmt:formatNumber value="${Two}" maxFractionDigits="2"/>.
-        <br/>
-        Three :-  <fmt:formatNumber value="${Three}" maxFractionDigits="2"/>.
-        <br/>
+        <c:if  test = "${One >= Two}">
+            <c:if  test = "${One >= Three}">
+                <p>One Is Big..<p>
+            </c:if>
+            
+        </c:if>
+        <c:if  test = "${Two >= One}">
+            <c:if  test = "${Two >= Three}">
+                <p>Two Is Big..<p>
+            </c:if>
+        </c:if>
+        <c:if  test = "${Three >= One}">
+            <c:if  test = "${Three >= Two}">
+                <p>Three Is Big..<p>
+            </c:if>
+        </c:if>
     </c:if>
 </body>
 </html>
