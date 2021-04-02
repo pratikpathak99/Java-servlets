@@ -29,6 +29,7 @@ color:blue;
         <br>
         The area of the circle is <fmt:formatNumber value="${convert}" maxFractionDigits="2"/>.
         <br/>
+        <br/>
         The area of the Perimeter is <fmt:formatNumber value="${perimeter}" maxFractionDigits="2"/>.
     </c:if>
 </body>
