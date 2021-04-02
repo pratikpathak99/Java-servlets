@@ -14,7 +14,7 @@ color:blue;
 }
 </style>
 <body>
-  <h2> Area of the Circle Solver in JSTL</h2>
+  <h2> Area of the Circle And Perimeter Solver in JSTL</h2>
   <br>
   <form method="post">
       Enter the Radius &nbsp; &nbsp;
@@ -28,6 +28,7 @@ color:blue;
         <c:set var="perimeter" scope="session" value="${ 2 * 3.14 *(param.radius)}"/>
         <br>
         The area of the circle is <fmt:formatNumber value="${convert}" maxFractionDigits="2"/>.
+        <br/>
         The area of the Perimeter is <fmt:formatNumber value="${perimeter}" maxFractionDigits="2"/>.
     </c:if>
 </body>
