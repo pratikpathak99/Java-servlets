@@ -11,17 +11,22 @@
     <body>
         <h2> Pattern  </h2>
         <br>
-      <form>
-	An input box: <input type="text" name="v">
-	<input type="submit" value="ok">
-	<c:set var="s" value="${param.v}"></c:set>
-</form>
-Before：<c:out value="${s}"></c:out><br>
-<c:if test="${not empty s}">
-	<c:forEach var="i" begin="0" end="${fn:length(s)-1}">
-		<c:set var="ns" value="${fn:substring(s,i,i+1)}${ns}"></c:set>
-	</c:forEach>
-</c:if>
-After：${ns}
+      <form method="post">
+        Enter a number &nbsp; &nbsp;
+      <input type="text" name="number"  size="3" value="<c:out value="${param.number}"/>" autofocus/><br>
+        <br> <br>
+       <input type="submit" value="Compute Factorial"  title="Click here to findout the factorial value." />
+       <br />
+      </form>
+      <c:if test="${pageContext.request.method=='POST'}">
+          <c:forEach var = "i" begin = "1" end = "${param.number} ">
+              
+              <c:forEach var = "j" begin = "1" end = "${i}">
+                  ${j}
+                </c:forEach>
+                  <br/>
+          </c:forEach>
+          
+      </c:if>
     </body>
 </html>
