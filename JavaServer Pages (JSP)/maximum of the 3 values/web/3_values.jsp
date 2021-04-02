@@ -38,7 +38,6 @@ color:blue;
             <c:if  test = "${One >= Three}">
                 <p>One Is Big..<p>
             </c:if>
-            
         </c:if>
         <c:if  test = "${Two >= One}">
             <c:if  test = "${Two >= Three}">
