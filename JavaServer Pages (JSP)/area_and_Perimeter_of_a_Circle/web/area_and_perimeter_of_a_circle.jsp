@@ -25,8 +25,10 @@ color:blue;
     </form>
     <c:if test="${pageContext.request.method=='POST'}">
         <c:set var="convert" scope="session" value="${ (param.radius* param.radius) * 3.1416}"/>
+        <c:set var="perimeter" scope="session" value="${ 2 * 3.14 *(param.radius)}"/>
         <br>
         The area of the circle is <fmt:formatNumber value="${convert}" maxFractionDigits="2"/>.
+        The area of the Perimeter is <fmt:formatNumber value="${perimeter}" maxFractionDigits="2"/>.
     </c:if>
 </body>
 </html>
