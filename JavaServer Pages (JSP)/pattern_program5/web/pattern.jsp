@@ -14,7 +14,7 @@
         Enter a number &nbsp; &nbsp;
       <input type="text" name="number"  size="3" value="<c:out value="${param.number}"/>" autofocus/><br>
         <br> <br>
-       <input type="submit" value="Compute Factorial"  title="Click here to findout the factorial value." />
+       <input type="submit" value="Go"  title="Click here to findout the factorial value." />
        <br />
       </form>
       <c:if test="${pageContext.request.method=='POST'}">
