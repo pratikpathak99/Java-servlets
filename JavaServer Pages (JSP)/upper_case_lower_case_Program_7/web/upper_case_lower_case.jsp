@@ -1,9 +1,3 @@
-<%-- 
-    Document   : upper_case_lower_case
-    Created on : Apr 2, 2021, 9:28:36 AM
-    Author     : asus
---%>
-
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
 
