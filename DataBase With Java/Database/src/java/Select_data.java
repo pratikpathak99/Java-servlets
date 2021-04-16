@@ -38,11 +38,16 @@ public class Select_data extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, ClassNotFoundException, SQLException {
+        
         response.setContentType("text/html;charset=UTF-8");
+        
+        
         try (PrintWriter out = response.getWriter()) {
             
+            
+            
             Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection con = DriverManager.getConnection ("jdbc:mysql://localhost:3306/java_database", "root", " ");
+            Connection con = DriverManager.getConnection ("jdbc:mysql://localhost:3306/java_database", "root", "");
             PreparedStatement ps =con.prepareStatement ("SELECT * FROM `product_info`");
             out.print ("<table width=50% border=1>");
             out.print ("<caption>Product Info:</caption>");
@@ -61,8 +66,6 @@ public class Select_data extends HttpServlet {
                 out.print ("<tr><td>" + rs.getString (1) + "</td><td>" +  rs.getString (2) + " </td><td>" + rs.getInt (3) + "</td></tr>");
             }
             out.print ("</table>");
-            
-            
         }
     }
 
