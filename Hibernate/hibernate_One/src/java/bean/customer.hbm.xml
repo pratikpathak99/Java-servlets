@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="bean.customer" table="customer">
+        <id name="CUSTOMER_ID" column="CUSTOMER_ID"/> 
+        <property name="CUST_FIRST_NAME" column="CUST_FIRST_NAME"/>
+        <property name="CUST_LAST_NAME" column="CUST_LAST_NAME"/>
+    </class>
+</hibernate-mapping>
